@@ -1,7 +1,5 @@
-SUMMARY = "OpenBMC for AspeedTech - System"
-
+SUMMARY = "OpenBMC for Accelsius - Applications"
 PR = "r1"
-
 inherit packagegroup
 
 PROVIDES = "${PACKAGES}"
@@ -34,22 +32,22 @@ RDEPENDS:${PN}-fan-control = " \
         phosphor-fan-monitor \
 	"
 
-SUMMARY:${PN}-chassis = "AspeedTech Chassis"
+SUMMARY:${PN}-chassis = "Accelsius Chassis"
 RDEPENDS:${PN}-chassis = " \
     x86-power-control \
     "
 
-SUMMARY:${PN}-fans = "AspeedTech Fans"
+SUMMARY:${PN}-fans = "Accelsius Fans"
 RDEPENDS:${PN}-fans = " \
     phosphor-pid-control \
     "
 
-SUMMARY:${PN}-flash = "AspeedTech Flash"
+SUMMARY:${PN}-flash = "Accelsius Flash"
 RDEPENDS:${PN}-flash = " \
     phosphor-software-manager \
     "
 
-SUMMARY:${PN}-system = "AspeedTech System"
+SUMMARY:${PN}-system = "Accelsius System"
 RDEPENDS:${PN}-system = " \
     phosphor-ipmi-ipmb \
     phosphor-hostlogger \
@@ -58,9 +56,10 @@ RDEPENDS:${PN}-system = " \
     phosphor-host-postd \
     phosphor-gpio-monitor-monitor \
     phosphor-led-manager \
+    phosphor-fan-sensor-monitor \
     "
 
-SUMMARY:${PN}-inband = "AspeedTech Inband Test"
+SUMMARY:${PN}-inband = "Accelsius Inband Test"
 RDEPENDS:${PN}-inband = " \
     phosphor-ipmi-ipmb \
     phosphor-ipmi-ssif \

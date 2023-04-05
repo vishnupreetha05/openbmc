@@ -12,7 +12,7 @@ IMAGE_FEATURES += " \
         obmc-console \
         obmc-devtools \
         obmc-fan-control \
-        obmc-fan-mgmt \
+	obmc-fan-mgmt \
         obmc-flash-mgmt \
         obmc-fru-ipmi \
         obmc-health-monitor \
